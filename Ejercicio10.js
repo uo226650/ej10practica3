@@ -41,7 +41,7 @@ class Noticia {
 
     prueba(){
         var url = 'https://newsapi.org/v2/top-headlines?' +
-        'country=us' +
+        'country=es' +
         '&apiKey=' + API_KEY;
         $.getJSON( url )
             .done(function( json ) {
