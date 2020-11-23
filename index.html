@@ -11,6 +11,19 @@
 
 <body>
     <h1>Noticias del mundo</h1>
+    <h2>Descubre cuánto se ha publicado sobre un tema</h2>
+    <div id="total"></div>
+    <input type="radio" id="semana" name="rangoFecha" onclick="noticia.setRango(7)" checked/>
+        <label for="semana">Última semana</label>
+        <input type="radio" id="quincena" name="rangoFecha" onclick="noticia.setRango(15)" />
+        <label for="quincena">Últimos quince días</label>
+        <input type="radio" id="mes" name="rangoFecha" onclick="noticia.setRango(30)" />
+        <label for="mes">Último mes</label>
+    <label for="busqueda">Ingresa la palabra que te interesa para conocer el número de artículos
+        que se han publicado sobre ese tema:
+    </label>
+    <input type="text" id="busqueda" value="palabra clave" onfocus="noticia.limpiarCampo('busqueda')"/>
+    <button onclick="noticia.buscar()">Buscar</button>
     <main></main>
     <footer>
         <a href="https://validator.w3.org/check/referer">
