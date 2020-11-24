@@ -30,7 +30,7 @@ p{
 }
 
 a:visited, a {
-    color: rgb(77, 0, 128);
+    color: rgb(57, 6, 92);
 }
 
 article img{
@@ -52,7 +52,7 @@ article{
 
 #buscador{
     margin: 2%;
-    background-color: rgb(188, 154, 243);
+    background-color: rgb(209, 186, 247);
     border-radius: 3em;
     padding: 1em;
     font-size: 1.2em;
