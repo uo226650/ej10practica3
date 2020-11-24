@@ -5,7 +5,6 @@ class Noticia {
     
     constructor(){
         this.frecuencia = 7;//Últimos 7 días por defecto
-        //this.prueba();
     }
 
     /**
@@ -39,14 +38,15 @@ class Noticia {
                 var articulos = datos.articles;
                 var html = "";
                 articulos.forEach(articulo => {
-                    html += "<article><h2>"
-                        + "<a href='" + articulo.url + "'>" 
+                    html += "<article>"
+                        + "<img src='" + articulo.urlToImage + "' alt='Imagen del artículo'/>"
+                        + "<h2><a href='" + articulo.url + "'>" 
                         + articulo.title + "</a></h2>"
                         + "<p>" + articulo.content
                         + "</p></article>"
                 });
-                $("main").html(html);
-                $("#total").html("<h3>Total: " + datos.totalResults + "</h3>");
+                $("main").append(html);
+                $("#total").html("Artículos publicados: " + datos.totalResults);
 
             },
             error: function () {

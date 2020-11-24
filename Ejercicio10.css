@@ -1,6 +1,55 @@
 body{
     display: block;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 }
 p{
     margin: 1em;
+}
+
+/* COLORS */
+body{
+    background-color:rgb(235, 220, 245);
+    color:black;
+}
+h1{
+    text-align:center;
+    color:rgb(39, 11, 65);
+}
+h2{
+    text-align:center;
+    color:rgb(77, 0, 128);
+}
+h3{
+    text-align:center;
+    color:rgb(149, 76, 218);
+}
+
+p{
+    color:black;
+    margin-left: 30px;
+}
+
+a:visited, a {
+    color: rgb(77, 0, 128);
+}
+
+article img{
+    float:left;
+    height: 200px;
+    width: 350px;
+    border: thin solid rgb(63, 20, 104);
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+article{
+    display: inline-block;
+    margin: 10px;
+    background-color: rgb(188, 154, 243);
+    border-radius: 25px;
+}
+
+#opciones, #buscador{
+    margin: 1em;
+    background-color: white;
 }
