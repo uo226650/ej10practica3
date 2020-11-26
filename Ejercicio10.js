@@ -45,7 +45,7 @@ class Noticia {
                         + "<p>" + articulo.content
                         + "</p></article>"
                 });
-                $("main").append(html);
+                $("#noticias").html(html);
                 $("#total").html("Artículos publicados: " + datos.totalResults);
 
             },
