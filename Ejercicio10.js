@@ -14,22 +14,17 @@ class Noticia {
      * @param {String} palabraClave 
      */
     pideDatos(palabraClave){
-        //var today = new Date("2020-11-05");
         var dias = this.frecuencia;
-        var today = new Date();//new Date().toISOString().slice(0, 10);
+        var today = new Date();
         var from = new Date(today-dias*24*60*60*1000);
-        console.log(today);
-        console.log(from);
-        //var to = "2020-11-05";
+
         var urlBusca = "https://newsapi.org/v2/everything?q=" + 
             palabraClave + "&sortBy=popularity" + 
             "&from=" + from.toISOString().slice(0, 10) + 
             "&to=" + today.toISOString().slice(0, 10) + 
             "&apiKey=" + 
             API_KEY;
-        //var url = 'https://newsapi.org/v2/top-headlines?' +
-        //'country=us' +
-        //'&apiKey=' + API_KEY;
+
         $.ajax({
             dataType: "json",
             url: urlBusca,
