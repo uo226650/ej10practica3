@@ -48,7 +48,8 @@ article img{
 
 /* COLORS */
 body{
-    background-color:rgb(235, 220, 245);
+    /*background-color:rgb(235, 220, 245);*/
+    background-color: white;
     color:black;
 }
 h1{
