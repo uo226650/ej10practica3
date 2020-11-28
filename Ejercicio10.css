@@ -24,6 +24,10 @@ article{
     display: block;
 }
 
+fieldset{
+    border-color: transparent;
+}
+
 input[type="radio"]{
     display: inline-block;
     margin: 1em;
