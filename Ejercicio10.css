@@ -2,6 +2,8 @@ body{
     display: block;
     font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
     font-weight: bold;
+    background-color:rgb(246, 238, 252);
+    color:black;
 }
 
 article{
@@ -48,10 +50,10 @@ article img{
 }
 
 /* COLORS */
-body{
+/*body{
     background-color:rgb(246, 238, 252);
     color:black;
-}
+}*/
 h1{
     text-align:center;
     color:rgb(39, 11, 65);
@@ -65,6 +67,7 @@ h2{
 h3{
     text-align:center;
     color:rgb(80, 9, 106);
+    background-color:rgb(246, 238, 252);
 }
 
 p{
