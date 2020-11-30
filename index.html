@@ -25,13 +25,13 @@
             <label for="busqueda">Descubrir artículos que contengan la palabra:
             </label>
             <input type="text" id="busqueda" value="palabra clave" onfocus="noticia.limpiarCampo('busqueda')" />
-            <button onclick="noticia.buscar()">Descubrir</button>
+            <button onclick="noticia.buscar()" onkeypress="noticia.buscar()">Descubrir</button>
         </div>
     </div>
     <main>
         <h2 id="total">Artículos publicados: </h2>
         <h3>Artículos más populares:</h3>
-        <p id="noticias"></p>
+        <div id="noticias"></div>
     </main>
     <footer>
         <a href="https://validator.w3.org/check/referer">
